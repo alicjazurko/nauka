@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Domek</title>
+    <style>
+        span {
+            display: block;
+            cursor: pointer;
+            width: 140px;
+            height: 50px;
+            background-color: rgb(129, 18, 18);
+            color: white;
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            line-height: 50px;
+            margin: 50px;
+            
+        }
+
+        div {
+            position: absolute;
+            top: 100vh;
+            left: 0;
+            width: 0;
+            height: 0;
+            transition: 1s;
+        }
+        
+        div:nth-child(7) { 
+            top: 80vh;
+            left: 0;
+            transition: ease-in-out 1.1s 0.5s;
+        }
+
+        div:nth-child(6) {
+            top: 80vh;
+            left: 800px;
+            transition: ease-in-out 1s;
+        }
+
+        div:nth-child(5) {
+            top: 80vh;
+            left: 0;
+            transition: ease-in-out 0.8s;
+        }
+
+        div:nth-child(4) {
+            top: 80vh;
+            left: 50px;
+            transition: linear 1s 0.3s;
+        }
+
+        div:nth-child(3) {
+            top: 80vh;
+            left: 50px;
+            transition: linear 1s 0.5s;
+        }
+
+        div:nth-child(2) {
+            top: 80vh;
+            left: 800px;
+            transition: ease-in-out .5s;
+        }
+
+        
+
+        span:hover~div:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(199, 136, 53);
+            top: 250px;
+            left: 400px;
+
+        }
+        
+        span:hover~div:nth-child(3) {
+            width: 50px;
+            height: 60px;
+            background-color: rgb(53, 164, 228);
+            top: 280px;
+            left: 430px;
+        }
+        
+        span:hover~div:nth-child(4) {
+            width: 50px;
+            height: 60px;
+            background-color: rgb(53, 164, 228);
+            top: 280px;
+            left: 520px;
+        }
+        
+        span:hover~div:nth-child(5) {
+            width: 50px;
+            height: 80px;
+            background-color: rgb(88, 71, 33);
+            top: 370px;
+            left: 475px;
+        }
+        
+        span:hover~div:nth-child(6) {
+            width: 170px;
+            height: 170px;
+            background-color: rgb(26, 19, 19);
+            top: 203px;
+            left: 403px;
+            transform: rotate(57deg) skew(20deg) translate(-15px, -30px);
+            z-index: -1;
+        }
+
+        span:hover~div:nth-child(7) {
+            width: 30px;
+            height: 80px;
+            background-color: rgb(145, 151, 146);
+            top: 150px;
+            left: 550px;
+            z-index: -2;
+        }
+        
+    
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <span>BUDUJEMY</span>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
