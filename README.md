@@ -1,3 +1,3 @@
 # nauka
-zadania kursowe 
+małe projekty własne
 HTML/CSS
