@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>banner</title>
+
+    <style>
+        div {
+            position: absolute;
+            width: 90%;
+            height: 500px;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, 0);
+            overflow: hidden;
+        }
+
+    img{
+        width: 100%;
+        position: absolute;
+        left: 0;
+        animation: photo 15s infinite linear both;
+    }
+
+    img:nth-child(1) {
+        bottom: 0;
+    }
+
+    img:nth-child(2) {
+        bottom: 0;
+        left: 0;
+        animation-delay: 5s;
+    }
+
+    img:nth-child(3) {
+        bottom: 0;
+        right: 0;
+        animation-delay: 10s;
+    }
+
+    @keyframes photo {
+        0% {
+            transform: translateX(100%);
+        }
+        26.5% {
+            transform: translateX(100%);
+        }
+        40% {
+            transform: translateX(0%);
+        }
+
+        60% {
+            transform: translateX(0%);
+        }
+        73.5% {
+            transform: translateX(-100%);
+        }
+
+
+        100% {
+            transform: translateX(-100%);
+        }
+        
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="desk.jpg" alt="">
+        <img src="fruit.jpg" alt="">
+        <img src="plant.jpg" alt="">
+    </div>
+    
+</body>
+</html>
