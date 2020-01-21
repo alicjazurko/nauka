@@ -1,3 +1,3 @@
 # nauka
 zadania kursowe 
-HTML/CSS/JS
+HTML/CSS
